@@ -1,0 +1,8 @@
+assertEquals($valeur, $valeurAttendu [, $message]) vérifie si les valeurs sont identiques (ex: assertEquals(0, 1) lèvera une erreur)
+assertFalse($condition [, $message]) vérifie si la condition est fausse (ex: assertFalse(0==0) lèvera une erreur)
+assertNotEquals($valeur, $valeurAttendu [, $message]) vérifie si les valeurs sont différentes (ex: assertNotEquals(1, 1) lèvera une erreur)
+assertNotNull($valeur [, $message]) vérifie si la valeur n’est pas null (ex: assertNotNull(null) lévera une erreur)
+assertNull($valeur [, $message]) vérifie si la valeur est null (ex: assertNull("toto") lèvera une erreur)
+assertSame($valeur, $valeurAttendu [, $message]) vérifie si les paramètres sont de même type et même valeur (i.e. la même instance s’il s’agit d’objet) (ex: assertSame(0, false) et assertSame(new MaClasse(), new MaClasse()) lèveront une erreur)
+assertNotSame($valeur, $valeurAttendu [, $message]) inverse de assertSame()
+assertTrue($condition [, $message]) vérifie si la condition est vraie (ex: assertTrue(1==0) lèvera une erreur)

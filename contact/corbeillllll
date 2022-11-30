@@ -1,0 +1,63 @@
+<?php 
+//C
+require 'database.php';
+ if
+ ($_SERVER["REQUEST_METHOD"]== "POST" && !empty($_POST))
+    {
+        $sql = "INSERT INTO contact (id,name,lastname) values(?, ?, ?)";
+        $q = $pdo->prepare($sql);
+        $q->execute(array( $id,$name,$lastname));
+
+        Database::disconnect();      
+    }
+?>
+<?php
+
+?><?php 
+//R
+require('database.php'); 
+
+    $sql = "SELECT * FROM contact where id =?";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($id));
+    $data = $q->fetch(PDO::FETCH_ASSOC);
+
+    Database::disconnect();
+?>
+<?php 
+    require 'database.php';
+    $sql = "UPDATE contact SET id = ?,name = ?,lastname = ?";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($id,$name,$firstname));
+
+    Database::disconnect();
+?>
+<?php 
+    require 'database.php'; 
+    $sql = "DELETE FROM user  WHERE id = ?";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($id));
+
+    Database::disconnect();
+?>
+<?php 
+// require 'database.php'; 
+// $id=0; 
+// if(!empty($_GET['id']))
+// { 
+//     $id=$_REQUEST['id'];
+//  } 
+//  if(!empty($_POST))
+//  { 
+//     $id= $_POST['id'];
+//      $pdo=Database::connect();
+//       $pdo->setAttribute(PDO::ATTR_ERRMODE,
+//        PDO::ERRMODE_EXCEPTION);
+//      $sql = "DELETE FROM user  WHERE id = ?";
+//         $q = $pdo->prepare($sql);
+//         $q->execute(array($id));
+//         Database::disconnect();
+//         header("Location: index.php");
+    
+// }
+?>
