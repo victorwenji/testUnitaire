@@ -1,13 +1,13 @@
 <?php 
     class Calcul
-    {      
+    {
         function add($nombre1, $nombre2)
         {
-            if ($nombre1 == NULL)
+            if ($nombre1 == null)
             {
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
-            if ($nombre2 == NULL)
+            if ($nombre2 == null)
             {
                 throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
             }
@@ -17,11 +17,11 @@
         
         function Sou($nombre1, $nombre2)
         {
-            if ($nombre1 == NULL)
+            if ($nombre1 == null)
             {
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
-            if ($nombre2 == NULL)
+            if ($nombre2 == null)
             {
                 throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
             }
@@ -30,11 +30,11 @@
         }
         function Mul($nombre1, $Nombre2)
         {
-            if ($nombre1 == NULL)
+            if ($nombre1 == null)
             {
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
-            if ($nombre2 == NULL)
+            if ($nombre2 == null)
             {
                 throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
             }
