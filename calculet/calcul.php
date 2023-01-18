@@ -1,54 +1,54 @@
 <?php 
     class Calcul
-    {       
-        function Add($Nombre1, $Nombre2)
+    {      
+        function add($nombre1, $nombre2)
         {
-            if ($Nombre1 == NULL)
+            if ($nombre1 == NULL)
             {
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
-            if ($Nombre2 == NULL)
+            if ($nombre2 == NULL)
             {
                 throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
             }
-            $Result = $Nombre1 + $Nombre2;
-            return $Result;  
+            $result = $nombre1 + $nombre2;
+            return $result;  
         }
         
-        function Sou($Nombre1, $Nombre2)
+        function Sou($nombre1, $nombre2)
         {
-            if ($Nombre1 == NULL)
+            if ($nombre1 == NULL)
             {
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
-            if ($Nombre2 == NULL)
+            if ($nombre2 == NULL)
             {
                 throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
             }
-            $Result = $Nombre1 - $Nombre2;
-            return $Result;
+            $result = $nombre1 - $nombre2;
+            return $result;
         }
-        function Mul($Nombre1, $Nombre2)
+        function Mul($nombre1, $Nombre2)
         {
-            if ($Nombre1 == NULL)
+            if ($nombre1 == NULL)
             {
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
-            if ($Nombre2 == NULL)
+            if ($nombre2 == NULL)
             {
                 throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
             }
-            $Result = $Nombre1 * $Nombre2; 
-            return $Result;
+            $result = $nombre1 * $nombre2; 
+            return $result;
         }
-        function Div($Nombre1, $Nombre2)
+        function Div($nombre1, $nombre2)
         {
-            if ($Nombre2==0)
+            if ($nombre2==0)
             {
                 throw new Exception("impossible de diviser par 0 !"); 
             }
-            $Result = $Nombre1 / $Nombre2; 
-            return $Result;     
+            $result = $nombre1 / $nombre2; 
+            return $result;     
         }
     }
 ?>
