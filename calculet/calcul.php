@@ -27,7 +27,7 @@
             $result = $nombre1 - $nombre2;
             return $result;
         }
-        function Mul($nombre1, $Nombre2)
+        function mul($nombre1, $Nombre2)
         {
             if ($nombre1 == null)
             {
@@ -40,7 +40,7 @@
             $result = $nombre1 * $nombre2; 
             return $result;
         }
-        function Div($nombre1, $nombre2)
+        function div($nombre1, $nombre2)
         {
             if ($nombre2==0)
             {
