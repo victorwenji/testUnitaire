@@ -1,4 +1,4 @@
-<?php 
+<?php
     class Calcul
     {
         function add($nombre1, $nombre2)
@@ -14,7 +14,6 @@
             $result = $nombre1 + $nombre2;
             return $result;  
         }
-        
         function Sou($nombre1, $nombre2)
         {
             if ($nombre1 == null)
@@ -48,7 +47,7 @@
                 throw new Exception("impossible de diviser par 0 !"); 
             }
             $result = $nombre1 / $nombre2; 
-            return $result;     
+            return $result;
         }
     }
 ?>

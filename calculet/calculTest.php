@@ -1,4 +1,3 @@
-
 <?php
     //class de test
     use PHPUnit\Framework\TestCase;
@@ -12,7 +11,6 @@
             $Calc = new calcul();
             $this->assertEquals(5, $Calc->add(2, 3));
         }
-
         public function TestAddN1IsNull()
         {
             $Calc = new calcul();
@@ -42,7 +40,6 @@
         public function TestDivN2IsNull()
         {
             $Calc = new calcul();
-            
             $this->expectException(Exception::class);
             $this->expectExceptionMessage("impossible de diviser par 0 !");
             $Calc->div(15, 0);
