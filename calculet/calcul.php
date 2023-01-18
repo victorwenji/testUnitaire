@@ -1,10 +1,12 @@
 <?php
     class Calcul
     {
+       const text = "N1 ne dois pas etre null!! remplacer N1!";
+       
         function add($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
-                throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
+                throw new Exception(text);
             }
             if ($nombre2 == null)
             {
