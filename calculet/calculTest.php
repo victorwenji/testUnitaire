@@ -4,16 +4,16 @@
     use PHPUnit\Framework\TestCase;
     include("calcul.php");
     // use calcul;
-    class calculTest extends TestCase
+    class CalculTest extends TestCase
     {
         //verifie si laddition fonctionne 
-        public function testAdd()
+        public function TestAdd()
         {
             $calc = new calcul();
             $this->assertEquals(5, $calc->add(2,3));
         }
 
-        public function testAddN1IsNull()
+        public function TestAddN1IsNull()
         {
             $calc = new calcul();
             $this->expectException(Exception::class);
@@ -21,7 +21,7 @@
             $calc->add(null,5);
             //$this->assertEquals(5, $calc->add(2,3));
         }
-        public function testAddN2IsNull()
+        public function TestAddN2IsNull()
         {
             $calc = new calcul();
             $this->expectException(Exception::class);
@@ -29,17 +29,17 @@
             $calc->add(5,null);
             //$this->assertEquals(5, $calc->add(2,3));
         }
-        public function testSou()
+        public function TestSou()
         {
             $calc = new calcul();
             $this->assertEquals(5, $calc->sou(8,3));
         }
-        public function testMul()
+        public function TestMul()
         {
             $calc = new calcul();
             $this->assertEquals(6, $calc->Mul(2,3));
         }
-        public function testDivN2IsNull()
+        public function TestDivN2IsNull()
         {
             $calc = new calcul();
             

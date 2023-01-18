@@ -1,7 +1,7 @@
 <?php 
-    class calcul
+    class Calcul
     {       
-        function add($N1,$N2)
+        function Add($N1,$N2)
         {
             if($N1 == NULL)
             {
@@ -15,7 +15,7 @@
             return $R;  
         }
         
-        function sou($N1,$N2)
+        function Sou($N1,$N2)
         {
             if($N1 == NULL)
             {
@@ -43,7 +43,7 @@
             return $R;
         }
 
-        function div($N1,$N2)
+        function Div($N1,$N2)
         {
            
             if($N2==0)
