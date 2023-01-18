@@ -1,7 +1,8 @@
 <?php
     class Calcul
     {
-       const text = "N1 ne dois pas etre null!! remplacer N1!";
+       const T = "N1 ne dois pas etre null!! remplacer N1!";
+       const N = "N2 ne dois pas etre null!! remplacer N2!";
        
         function add($nombre1, $nombre2)
         {
@@ -10,7 +11,7 @@
             }
             if ($nombre2 == null)
             {
-                throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
+                throw new Exception("".N);
             }
             $result = $nombre1 + $nombre2;
             return $result;  
@@ -19,11 +20,11 @@
         {
             if ($nombre1 == null)
             {
-                throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
+                throw new Exception("".T);
             }
             if ($nombre2 == null)
             {
-                throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
+                throw new Exception("".N);
             }
             $result = $nombre1 - $nombre2;
             return $result;
@@ -32,11 +33,11 @@
         {
             if ($nombre1 == null)
             {
-                throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
+                throw new Exception("".T);
             }
             if ($nombre2 == null)
             {
-                throw new Exception("N2 ne dois pas etre null!! remplacer N2!");
+                throw new Exception("".N);
             }
             $result = $nombre1 * $nombre2; 
             return $result;
