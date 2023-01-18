@@ -3,8 +3,7 @@
     {
         function add($nombre1, $nombre2)
         {
-            if ($nombre1 == null)
-            {
+            if ($nombre1 == null){
                 throw new Exception("N1 ne dois pas etre null!! remplacer N1!");
             }
             if ($nombre2 == null)
