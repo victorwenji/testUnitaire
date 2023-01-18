@@ -2,7 +2,7 @@
     "name": "pasca/test-unitaire",
     "description": "project",
     "type": "project",
-    "license": "gpl",
+    "license": "AGPL-3.0-only",
     "autoload": {
         "psr-4": {
             "Pasca\\TestUnitaire\\": "src/"
