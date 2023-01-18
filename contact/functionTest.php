@@ -13,7 +13,7 @@
         public function testinsert()
         {
             $info = new information();
-            $info->insert(5,"pascal","loic");
+            $info->insert(5, "pascal", "loic");
         }        
 }
 

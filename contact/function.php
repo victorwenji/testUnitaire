@@ -9,9 +9,9 @@ class information{
     }
      
     function insert($id,$firstname,$lastname){  
-        $sql = "INSERT INTO contact(id,name,lastname) values(?,?,?)";
+        $sql = "INSERT INTO contact(id, name, lastname) values(?, ?, ?)";
         $q = $this->pdo->prepare($sql);
-        $q->execute(array( $id,$firstname,$lastname));     
+        $q->execute(array( $id, $firstname, $lastname));     
     }
 
     function select($id){
@@ -24,12 +24,12 @@ class information{
         Database::disconnect();
     }
 
-    function update($id,$name,$lastname)
+    function update($id, $name, $lastname)
     {
         $pdo=Database::connect();
-        $sql = "UPDATE contact SET id =$id,name = $name,lastname = $lastname";
+        $sql = "UPDATE contact SET id =$id, name = $name, lastname = $lastname";
         $q = $pdo->prepare($sql);
-        $q->execute(array($id,$name,$firstname));
+        $q->execute(array($id, $name, $firstname));
 
         Database::disconnect();
     }
