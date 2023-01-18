@@ -7,7 +7,7 @@
         function add($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
-                throw new Exception(text);
+                throw new Exception("".T);
             }
             if ($nombre2 == null)
             {
