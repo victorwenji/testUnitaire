@@ -28,7 +28,6 @@
             $R = $N1 - $N2;
             return $R;
         }
-
         function Mul($N1,$N2)
         {
             if($N1 == NULL)
@@ -42,10 +41,8 @@
             $R = $N1 * $N2; 
             return $R;
         }
-
         function Div($N1,$N2)
         {
-           
             if($N2==0)
             {
                 throw new Exception("impossible de diviser par 0 !"); 
