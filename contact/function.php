@@ -2,17 +2,17 @@
 class Information
 {
     private $pdo;
-    function __construct()
+    public function __construct()
     {
         $this->pdo  = new PDO('sqlite:C:\\Sqlite\\info');
     }
-    function insert($id, $firstname, $lastname)
+    public function insert($id, $firstname, $lastname)
     {
         $sql = "INSERT INTO contact(id, name, lastname) values(?, ?, ?)";
         $q = $this->pdo->prepare($sql);
         $q->execute(array($id, $firstname, $lastname));
     }
-    function select($id)
+    public function select($id)
     {
         $pdo=Database::connect();
         $sql = "SELECT * FROM contact where id =?";
@@ -21,7 +21,7 @@ class Information
         $q->fetch(PDO::FETCH_ASSOC);
         Database::disconnect();
     }
-    function update($id, $name, $lastname)
+    public function update($id, $name, $lastname)
     {
         $pdo=Database::connect();
         $sql = "UPDATE contact SET id =$id, name = $name, lastname = $lastname";
@@ -29,7 +29,7 @@ class Information
         $q->execute(array($id, $name, $firstname));
         Database::disconnect();
     }
-    function delete($id)
+    public function delete($id)
     {
         $pdo=Database::connect();
         $sql = "DELETE FROM user  WHERE id = $id";
