@@ -1,7 +1,7 @@
 <?php
     /*class de test*/
     use PHPUnit\Framework\TestCase;
-    include("calcul.php");
+    use calculet\calcul;
     /*use calcul;*/
     class CalculTest extends TestCase
     {
