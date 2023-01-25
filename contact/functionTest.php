@@ -9,6 +9,7 @@
         {
             $info = new information();
             $info->insert(5, "pascal", "loic");
+            $this->assertEquals("foo", $info->getMessage());
         }
     }
 
