@@ -18,7 +18,7 @@ class Information
         $sql = "SELECT * FROM contact where id =?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
-        $data = $q->fetch(PDO::FETCH_ASSOC);
+        $q->fetch(PDO::FETCH_ASSOC);
         Database::disconnect();
     }
     function update($id, $name, $lastname)
