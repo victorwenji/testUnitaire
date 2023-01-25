@@ -14,7 +14,7 @@
            return $nombre1 + $nombre2;
             
         }
-        function Sou($nombre1, $nombre2)
+        function sou($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
@@ -24,7 +24,7 @@
             }
             return $nombre1 - $nombre2;
         }
-        function mul($nombre1, $Nombre2)
+        function mul($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
@@ -44,4 +44,3 @@
             
         }
     }
-?>
