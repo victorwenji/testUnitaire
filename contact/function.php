@@ -6,11 +6,11 @@ class Information
     {
         $this->pdo  = new PDO('sqlite:C:\\Sqlite\\info');
     }
-    function insert($id,$firstname,$lastname)
+    function insert($id, $firstname, $lastname)
     {
         $sql = "INSERT INTO contact(id, name, lastname) values(?, ?, ?)";
         $q = $this->pdo->prepare($sql);
-        $q->execute(array( $id, $firstname, $lastname)); 
+        $q->execute(array($id, $firstname, $lastname));
     }
     function select($id)
     {
