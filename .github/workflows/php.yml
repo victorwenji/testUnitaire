@@ -22,8 +22,8 @@ sonarcloud:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-  build:
 
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -47,4 +47,4 @@ sonarcloud:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     # - name: Run test suite
-    #   run: composer run-script test
+     run: composer run-script test
