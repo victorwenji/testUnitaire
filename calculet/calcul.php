@@ -9,8 +9,7 @@
             if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
             }
-            if ($nombre2 == null)
-            {
+            if ($nombre2 == null) {
                 throw new InvalidArgumentException("".N);
             }
             $result = $nombre1 + $nombre2;
