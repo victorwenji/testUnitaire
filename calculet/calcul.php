@@ -7,11 +7,11 @@
         function add($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
-                throw new Exception("".T);
+                throw new InvalidArgumentException("".T);
             }
             if ($nombre2 == null)
             {
-                throw new Exception("".N);
+                throw new InvalidArgumentException("".N);
             }
             $result = $nombre1 + $nombre2;
             return $result;  
@@ -20,11 +20,11 @@
         {
             if ($nombre1 == null)
             {
-                throw new Exception("".T);
+                throw new InvalidArgumentException("".T);
             }
             if ($nombre2 == null)
             {
-                throw new Exception("".N);
+                throw new InvalidArgumentException("".N);
             }
             $result = $nombre1 - $nombre2;
             return $result;
@@ -33,11 +33,11 @@
         {
             if ($nombre1 == null)
             {
-                throw new Exception("".T);
+                throw new InvalidArgumentException("".T);
             }
             if ($nombre2 == null)
             {
-                throw new Exception("".N);
+                throw new InvalidArgumentException("".N);
             }
             $result = $nombre1 * $nombre2; 
             return $result;
@@ -46,7 +46,7 @@
         {
             if ($nombre2==0)
             {
-                throw new Exception("impossible de diviser par 0 !"); 
+                throw new InvalidArgumentException("impossible de diviser par 0 !"); 
             }
             $result = $nombre1 / $nombre2; 
             return $result;
