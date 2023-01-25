@@ -2,7 +2,8 @@
 class Information
 {
     private $pdo;
-    function __construct() {
+    function __construct()
+    {
         $this->pdo  = new PDO('sqlite:C:\\Sqlite\\info');
     }
     function insert($id,$firstname,$lastname)
