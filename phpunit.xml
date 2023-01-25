@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
-         bootstrap="tests/bootstrap.php"
-         cacheDirectory=".phpunit.cache"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         cacheResultFile=".phpunit.cache/test-results"
          executionOrder="depends,defects"
+         forceCoversAnnotation="true"
+         beStrictAboutCoversAnnotation="true"
          beStrictAboutOutputDuringTests="true"
-         colors="true">
+         beStrictAboutTodoAnnotatedTests="true"
+         convertDeprecationsToExceptions="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         verbose="true">
+
+    <php>
+        <ini name="error_reporting" value="-1" />
+        <ini name="xdebug.mode" value="coverage" />
+        <env name="XDEBUG_MODE" value="coverage" />
+    </php>
     <testsuites>
         <testsuite name="default">
-            <directory>tests/tests</directory>
+            <directory>calcul/calculTest</directory>
+            <directory>contact/functionTest</directory>
         </testsuite>
     </testsuites>
 
-    <coverage>
+    <coverage cacheDirectory=".phpunit.cache/code-coverage"
+              processUncoveredFiles="true">
         <include>
             <directory suffix=".php">src</directory>
         </include>
     </coverage>
-
-    <php>
-        <ini name="serialize_precision" value="14"/>
-    </php>
 </phpunit>
