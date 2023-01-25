@@ -11,43 +11,37 @@
             if ($nombre2 == null) {
                 throw new InvalidArgumentException("".N);
             }
-           return $result = $nombre1 + $nombre2;
-            //return $result;
+           return $nombre1 + $nombre2;
+            
         }
         function Sou($nombre1, $nombre2)
         {
-            if ($nombre1 == null)
-            {
+            if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
             }
-            if ($nombre2 == null)
-            {
+            if ($nombre2 == null) {
                 throw new InvalidArgumentException("".N);
             }
-            return $result = $nombre1 - $nombre2;
-            //return $result;
+            return $nombre1 - $nombre2;
         }
         function mul($nombre1, $Nombre2)
         {
-            if ($nombre1 == null)
-            {
+            if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
             }
-            if ($nombre2 == null)
-            {
+            if ($nombre2 == null) {
                 throw new InvalidArgumentException("".N);
             }
-            return $result = $nombre1 * $nombre2;
-           // return $result;
+            return $nombre1 * $nombre2;
+           
         }
         function div($nombre1, $nombre2)
         {
-            if ($nombre2==0)
-            {
+            if ($nombre2==0) {
                 throw new InvalidArgumentException("impossible de diviser par 0 !");
             }
-            return $result = $nombre1 / $nombre2;
-            //return $result;
+            return $nombre1 / $nombre2;
+            
         }
     }
 ?>
