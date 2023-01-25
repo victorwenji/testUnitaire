@@ -3,7 +3,7 @@
     {
        const T = "N1 ne dois pas etre null!! remplacer N1!";
        const N = "N2 ne dois pas etre null!! remplacer N2!";
-        function add($nombre1, $nombre2)
+        public function add($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
@@ -14,7 +14,7 @@
            return $nombre1 + $nombre2;
             
         }
-        function sou($nombre1, $nombre2)
+        public function sou($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
@@ -24,7 +24,7 @@
             }
             return $nombre1 - $nombre2;
         }
-        function mul($nombre1, $nombre2)
+        public function mul($nombre1, $nombre2)
         {
             if ($nombre1 == null) {
                 throw new InvalidArgumentException("".T);
@@ -35,7 +35,7 @@
             return $nombre1 * $nombre2;
            
         }
-        function div($nombre1, $nombre2)
+        public function div($nombre1, $nombre2)
         {
             if ($nombre2==0) {
                 throw new InvalidArgumentException("impossible de diviser par 0 !");
