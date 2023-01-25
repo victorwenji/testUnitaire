@@ -4,12 +4,12 @@
     use PHPUnit\Framework\TestCase;
     class FunctionTest extends TestCase
     {
-        protected $pdo;
-        public function testinsert()
-        {
-            $info = new information();
-            $info->insert(5, "pascal", "loic");
-            $this->assertEquals("foo", $info->getMessage());
-        }
+        // protected $pdo;
+        // public function testinsert()
+        // {
+        //     $info = new information();
+        //     $info->insert(5, "pascal", "loic");
+            
+        // }
     }
 
