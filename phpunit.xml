@@ -30,11 +30,6 @@
         <include>
             <directory suffix=".php">src</directory>
         </include>
-    </coverage>
 </phpunit>
 
-<logging>
-        <log type="coverage-clover" target="_reports/logs/clover.xml"/>
-        <log type="coverage-xml" target="_reports/coverage/coverage.xml"/>
-        <log type="testdox-text" target="_reports/testdox/executed.txt"/>
- </logging>
+
