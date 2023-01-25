@@ -26,7 +26,7 @@ class Information
         $pdo=Database::connect();
         $sql = "UPDATE contact SET id =$id, name = $name, lastname = $lastname";
         $q = $pdo->prepare($sql);
-        $q->execute(array($id, $name, $firstname));
+        $q->execute(array($id, $name, $lastname));
         Database::disconnect();
     }
     public function delete($id)
