@@ -1,6 +1,6 @@
 <?php
     use PHPUnit\Framework\TestCase;
-    use calculet\calcul;
+    use calculet\Calcul;
 
     class CalculTest extends TestCase
     {

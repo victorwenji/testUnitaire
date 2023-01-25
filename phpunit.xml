@@ -20,8 +20,8 @@
     </php>
     <testsuites>
         <testsuite name="default">
-            <directory>calcul/calculTest</directory>
-            <directory>contact/functionTest</directory>
+            <directory>src/calculet/calculTest</directory>
+            <directory>src/contact/functionTest</directory>
         </testsuite>
     </testsuites>
 
@@ -30,6 +30,7 @@
         <include>
             <directory suffix=".php">src</directory>
         </include>
+    </coverage>
 </phpunit>
 
 
