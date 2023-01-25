@@ -11,8 +11,8 @@
             if ($nombre2 == null) {
                 throw new InvalidArgumentException("".N);
             }
-            $result = $nombre1 + $nombre2;
-            return $result;
+           return $result = $nombre1 + $nombre2;
+            //return $result;
         }
         function Sou($nombre1, $nombre2)
         {
@@ -24,8 +24,8 @@
             {
                 throw new InvalidArgumentException("".N);
             }
-            $result = $nombre1 - $nombre2;
-            return $result;
+            return $result = $nombre1 - $nombre2;
+            //return $result;
         }
         function mul($nombre1, $Nombre2)
         {
@@ -37,8 +37,8 @@
             {
                 throw new InvalidArgumentException("".N);
             }
-            $result = $nombre1 * $nombre2;
-            return $result;
+            return $result = $nombre1 * $nombre2;
+           // return $result;
         }
         function div($nombre1, $nombre2)
         {
@@ -46,8 +46,8 @@
             {
                 throw new InvalidArgumentException("impossible de diviser par 0 !");
             }
-            $result = $nombre1 / $nombre2;
-            return $result;
+            return $result = $nombre1 / $nombre2;
+            //return $result;
         }
     }
 ?>
