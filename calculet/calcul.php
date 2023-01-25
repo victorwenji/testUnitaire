@@ -40,7 +40,7 @@
             if ($nombre2==0) {
                 throw new InvalidArgumentException("impossible de diviser par 0 !");
             }
-            return $nombre1 / $nombre2; 
+            return $nombre1 / $nombre2;
         }
     }
 
