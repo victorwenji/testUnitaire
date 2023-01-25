@@ -2,12 +2,9 @@
     use contact\function;
 
     use PHPUnit\Framework\TestCase;
-    class functionTest extends TestCase
+    class FunctionTest extends TestCase
     {
         protected $pdo;
-        public function getConnection()
-        {
-        }
         public function testinsert()
         {
             $info = new information();
